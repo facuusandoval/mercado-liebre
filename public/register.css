@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*------ Vista Mobile----*/
+
+body {
+    font-family: Roboto, sans-serif;  
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+/*----Header----*/
+
+header {
+    background-color: #EAC926;  
+}
+
+header .top-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+header .logo{
+    display: inline;
+    width: 40%;
+
+}
+
+header .logo .imagen{
+    width: 130px;
+}
+
+header .buscador{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:50%;
+    margin-top: 20px;
+    margin-left: 20px ;
+    text-align: center;
+}
+
+    
+header .form{
+    display: inline;
+    box-sizing: border-box;
+    margin-left: 5px;
+
+}
+
+header  .input{
+    display: inline-block ;
+    font-size: 100%;
+}
+
+header .submit{
+    display: inline;
+    font-size: 10px;
+}
+
+header .site{
+    display: none;
+}
+
+
+header .enlaces-header{
+    color: #000;
+    text-decoration: none;
+}
+
+header .form .input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .compra{
+    text-align: center;
+    order:10;
+    display: block;
+    width:100%;
+    padding-top: 1%;
+}
+
+div.burger-menu{
+    text-align: center;
+    color:aliceblue;
+
+}
+
+div.burger-menu i{
+    background-color: #1259c3;;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+header #check{
+    display: none;
+}
+
+header .lista-hamburguesa{
+    position: fixed;
+    width: 100%;
+    height:100vh;
+    background: #EAC926;
+    top:80px;
+    left:-100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+    header .lista-hamburguesa li{
+        display: block;
+        margin:50px 0;
+        line-height:30px;
+    }
+
+    header .lista-hamburguesa li a{
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    header .lista-hamburguesa li a:hover, .lista-hamburguesali a.active{
+        background: none;
+        color:#1259c3
+    }
+
+    #check:checked ~ .lista-hamburguesa{
+        left:0;
+    }
+
+/*----Main----*/
+
+main {
+    padding-top: 4vw;
+    padding-bottom: 8vw;
+    margin: 2vw 2vw 0;
+  }
+  
+  main .ruta-login {
+    margin: 0px auto 4.5em;
+    padding-top: 5%;
+    font-size: 3vh;
+  }
+  
+  main .ruta-login, .ruta-login a {
+    text-decoration: none;
+    color: #ADB2B5;
+    text-align: center;
+  }
+  
+  .ruta-login p {
+    display: inline-block;
+    font-weight: bold;
+    color: #8f8f8f;
+  }
+  
+  main .form {
+    background-color: white;
+    padding: 0 3em 4.5em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+  }
+  
+  main .form_conteiner {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+  }
+  
+  main .form_group {
+    position: relative;
+    --color: #5757577e;
+  }
+  
+  main .form_input {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: 2% 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+  }
+
+
+  .form_input:focus + .form_label {
+    top: -10px;
+    color: #3866f2;
+  }
+  
+  .form_input:not(:placeholder-shown) + .form_label {
+    transform: translateY(-10px) scale(1);
+  }
+  
+  .form_label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: color 0.3s;
+  }
+  
+  .form_submit {
+    margin: auto;
+    width: 50%;
+  }
+  
+  .form_submit{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: #1259c3;
+    color: #dcdcdc;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 0.5em;
+  }
+
+  .form_line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform 0.4s;
+    /* En conjunto modifica y da transiciones al texto en NOMBRE, USUARIO, CONTRA.*/
+  }
+  
+  .form_input:focus ~ .form_label,
+  .form_input:not(:placeholder-shown) ~ .form_line {
+    transform: scale(1);
+  }
+  
+  
+  
+
+/*----Footer----*/
+footer{
+    background-color: #FFF;
+    padding: 5%;
+}
+
+footer h4{
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+
+footer .fa-solid {
+    color: #1259c3;
+    font-size: 5vh;
+}
+
+footer .iconos{
+    text-align: center;
+    padding-top: 5%;
+}
+
+footer h4{
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+footer h5{
+    padding-top: 5%;
+}
+
+  
+/*---------------Vista Tablet-----------*/
+
+@media (min-width: 361px) {
+
+
+    /*----Header----*/
+    
+        header {
+            padding-bottom: 1%;
+        }
+    
+    
+    
+        header .logo{
+            width: 24%;
+        }
+    
+    
+    
+        header .compra{
+            width: 35%;
+            align-self:center;
+            margin-top: 20px;
+        }
+    
+        header .logo .imagen{
+            width: 115px;
+            height: 100px;
+        }
+    
+        header .form{
+            width:100%;
+        }
+        header .input{
+            width:25vw;
+        }
+    
+        header .buscador{
+            display: block;
+            align-self: center ;
+            width: 35%;
+            text-align: center;
+        }
+    
+        header .site{
+            display: flex;
+            width:100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: baseline;
+        }
+    
+        .enlaces-header{
+            list-style: none;
+            display: inline-block;
+        }
+        
+        header .site-hijo-1{
+        width: 40%;
+        display:flex;
+        margin:auto;
+        
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        }
+    
+        header .site-hijo-2{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap ;
+        list-style: none;
+        }
+    
+        header .burger-menu{
+            display: none;
+        }
+    
+        header .form{
+            width:30%;
+        }
+    /*----Main---*/
+        main .form_group{
+            font-size: 18px;
+        }
+   
+   
+/*--------Vista Pc-------*/
+
+@media (min-width: 769px){
+
+    /*----Header----*/
+    
+        header .logo .imagen{
+            width: 250px;
+            height: 200px
+        }
+    
+        header .buscador{
+            text-align: start;
+            margin-left: 0px;
+        }
+    
+        header .input{
+         width: 33vw;
+        }
+        /*----Main---*/
+
+
+        main .form_group{
+            font-size: 23px;
+        }
+
+        main .form_submit{
+            font-size: 25px;
+        }
+    
+        .main-paragraph-first{
+            font-size: 18px;
+        }
+
+        /*-----------Footer-----*/
+
+    
+    footer .fa-solid{
+        font-size: 6vh;
+    }
+
+    footer h4{
+        font-size: 2vh;
+    }
+
+    footer p{
+        font-size: 2vh;
+    }
+}
