@@ -246,7 +246,6 @@ main {
     transform: scale(0);
     transform: left bottom;
     transition: transform 0.4s;
-    /* En conjunto modifica y da transiciones al texto en NOMBRE, USUARIO, CONTRA.*/
   }
   
   .form_input:focus ~ .form_label,
@@ -376,6 +375,12 @@ footer h5{
         header .form{
             width:30%;
         }
+
+        header .enlaces-header{
+            font-size: 7px;
+          }
+
+
     /*----Main---*/
         main .form_group{
             font-size: 18px;
@@ -416,6 +421,10 @@ footer h5{
             font-size: 18px;
         }
 
+        header .enlaces-header{
+            font-size: 15px;
+          }
+
         /*-----------Footer-----*/
 
     
@@ -429,5 +438,9 @@ footer h5{
 
     footer p{
         font-size: 2vh;
+    }
+
+    footer .fa-solid:hover {
+        color:#666;
     }
 }

@@ -397,6 +397,15 @@ footer h5{
         header .form{
             width:30%;
         }
+
+        
+    header .site-hijo-1, .site-hijo-2{
+      width:45%;
+  }
+
+    header .enlaces-header{
+      font-size: 7px;
+    }
     /*----Main---*/
 
   main {
@@ -426,7 +435,10 @@ footer h5{
         header .input{
          width: 33vw;
         }
-    
+        
+        header .enlaces-header{
+          font-size: 15px;
+        }
     /*----Main----*/
     main{
       padding: 2vw;
@@ -457,4 +469,10 @@ footer h5{
     footer p{
         font-size: 2vh;
     }
+
+    footer .fa-solid:hover {
+      color:#666;
+  }
+  
+
 }

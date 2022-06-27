@@ -279,7 +279,6 @@ footer h5{
     padding-top: 5%;
 }
 
-
 /*---------------Vista Tablet-----------*/
 
 @media (min-width: 361px) {
@@ -355,6 +354,15 @@ footer h5{
     list-style: none;
     }
 
+    header .site-hijo-1, .site-hijo-2{
+        width:45%;
+    }
+
+    header .enlaces-header{
+        
+        font-size: 7px;
+    }
+
     header .burger-menu{
         display: none;
     }
@@ -421,9 +429,21 @@ footer h5{
      width: 33vw;
     }
 
+    header .enlaces-header{
+        font-size: 15px;
+      }
+
 /*----Main----*/
     main .all-products{
         align-items: stretch;
+    }
+
+    main .logo-envio{
+        transition: all 1s;
+    }
+
+    main .logo-envio:hover {
+        transform:rotate(-90deg)
     }
 
     main .product{
@@ -444,5 +464,9 @@ footer h5{
 
     footer p{
         font-size: 2vh;
+    }
+
+    footer .fa-solid:hover {
+        color:#666;
     }
 }
